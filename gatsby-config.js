@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
+    title: 'Nogada Develop blog',
+    description: '명지대학교에서 컴퓨터 공학을 전공하는 학생입니다.',
+    siteUrl: 'https://azxca1731.netlify.com',
+    author: 'azxca1731',
     twitter: 'jaxx2104',
     adsense: '',
   },
