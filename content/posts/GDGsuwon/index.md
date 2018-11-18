@@ -73,7 +73,7 @@ axios나 볼리 레트로핏 대신에 http모듈이 강력해 http모듈을 사
 
 `응답은 50 ms 이내, 애니메이션은 10ms 이내, 유휴 시간을 최대한 유지, 로드는 5초이내에`
 
-##<b>만약에 당신이 문제를 모른다면 문제를 알 수 없다.<b>
+##<b>만약에 당신이 문제를 모른다면 문제를 알 수 없다.</b>
 
 이때 문제를 해결하기 위한 방법
 
@@ -133,3 +133,11 @@ QnA GDE는 오픈소스 커밋이 연결해줌
 
 유명 오픈소스 커미터로 부터 코드리뷰도 받을 수 있는 기회
 구글에서 제공하는 여러가지 Benefit
+
+###발표자료
+밑에 발표자료를 나중에 추가로 구하여 게시해 놓았다 누르면 들어가지니 필요하면 들어가보면 좋을것 같다.
+
+1. [Keynote](https://speakerdeck.com/gdg/gdg-devfest-suwon-2018-keynote)
+2. [Flutter](https://speakerdeck.com/gdg/gdg-devfest-suwon-2018-flutter-101-jake-yoon)
+3. [Improve Web Performance](https://speakerdeck.com/gdg/gdg-devfest-suwon-2018-improve-web-performance-cho-eun)
+4. [GSoC](https://speakerdeck.com/gdg/gdg-devfest-suwon-2018-gsoc-donghee-na)
