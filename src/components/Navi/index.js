@@ -5,7 +5,7 @@ class Navi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
-      <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
+      <nav className="navbar navbar-expand navbar-dark flex-column bg-primary">
         <div className="container">
           <Link className="text-center" to="/">
             <h1 className="navbar-brand mb-0">{title}</h1>
@@ -28,13 +28,22 @@ class Navi extends React.Component {
                     : 'nav-item'
                 }
               >
-                <Link to="/profile/" className="nav-link">
+                <Link to="/Profile/" className="nav-link">
                   Profile
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
+        </div>
+        <div className="container">
+          <div className="text-center NavBio">
+            노가다는 예술과 같다. 그러므로 코딩도 예술이다
+          </div>
+          <style jsx>{`
+            .NavBio {
+              color: #fff;
+            }
+          `}</style>
         </div>
       </nav>
     )
