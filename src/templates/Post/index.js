@@ -45,7 +45,9 @@ const Post = ({ data, options }) => {
         <div className="content">
           <p>{description}</p>
           {fixed ? (
-            <Img fixed={fixed} style={{ display: 'block', margin: '0 auto' }} />
+            <div className="col-12">
+              <Img fixed={fixed} style={{ width: '100%' }} />
+            </div>
           ) : (
             ''
           )}

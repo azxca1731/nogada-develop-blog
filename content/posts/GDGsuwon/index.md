@@ -3,7 +3,8 @@ title: 'GDG 수원 참석후기'
 date: '2018-11-17T19:50:00.284Z'
 layout: post
 path: '/gdgSuwonDevFest/'
-description: 'Gdg 수원을 다녀오고 느낌점 및 요약정링'
+image: ./gdgsuwon.jpg
+description: 'Gdg 수원을 다녀오고 느낌점 및 요약정리'
 category: Conference
 tags:
   - Rail
@@ -12,7 +13,7 @@ tags:
 ---
 
 이번 2018.11.13에 수원에서 진행하는 gdg수원 devFest를 다녀오고 느낀점이 많아 적은 것을 공유하려한다. ###키노트
-이번 데브 페스트의 주제는 digital well-being
+이번 데브 페스트의 주제는 digital well-being이였다.
 
 ---
 
@@ -52,6 +53,8 @@ axios나 볼리 레트로핏 대신에 http모듈이 강력해 http모듈을 사
 퓨처라고 지원해주는것이 있는데 await하고 비슷함 대신 퓨처는 리슨이라는 것으로 받아야함
 
 ---
+
+<img style="height: 310px;" src="./gdgsuwonguest.jpg" alt="Gdg Suwon Guests">
 
 ###웹 성능 향상 오픈소스에서 배우는 웹개발
 
