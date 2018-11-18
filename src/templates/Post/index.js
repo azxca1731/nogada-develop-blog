@@ -6,7 +6,10 @@ import Img from 'gatsby-image'
 
 import Adsense from 'components/Adsense'
 import Footer from 'components/Footer'
+import Disqus from 'disqus-react';
 import './style.scss'
+
+const MY_URL = 'https://azxca1731.netlify.com'
 
 const Post = ({ data, options }) => {
   const {
@@ -22,7 +25,12 @@ const Post = ({ data, options }) => {
   const html = get(data, 'html')
   const isMore = isIndex && !!html.match('<!--more-->')
   const fixed = get(image, 'childImageSharp.fixed')
-
+  const disqusShortname = 'nogada-develop-blog';
+  const disqusConfig = {
+      url: `${MY_URL}/${path}`,
+      identifier: path,
+      title
+  };
   return (
     <div className="article" key={path}>
       <div className="container">
@@ -50,6 +58,7 @@ const Post = ({ data, options }) => {
         />
         {isMore ? Button({ path, label: 'MORE', primary: true }) : ''}
         {getAd(isIndex, adsense)}
+        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </div>
     </div>
   )
