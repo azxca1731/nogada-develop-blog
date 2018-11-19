@@ -1,6 +1,6 @@
 ---
 title: BlockChain은 처음이지?
-date: "2018-11-19T12:40:32.169Z"
+date: "2018-11-19T04:02:08.208Z"
 layout: post
 path: "/blockchain/"
 category: Conference
