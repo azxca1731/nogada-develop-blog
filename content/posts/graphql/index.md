@@ -15,9 +15,9 @@ tags:
 ###graphql의 배경
 페이스북은 페이스북의 라이브러리를 이런식으로 사용중이다.
 
-> react : ui 라이브러리 <hr />
-> graphql : data fetch 라이브러리 <hr />
-> relay : react와 graphql 엮어주는 라이브러리 <hr />
+> react : ui 라이브러리 <br />
+> graphql : data fetch 라이브러리 <br />
+> relay : react와 graphql 엮어주는 라이브러리 <br />
 
 페이스북은 예전엔 데스크탑 웹이 우선적이었다. 하지만 이때 모바일은 안되는 기능들과 성능이 있었다.
 이걸 고치기 위해 원래 html을 웹뷰로 보여준것과 달리 아예 네이티브 앱과 웹서버를 엮어줘야했다.
