@@ -4,9 +4,10 @@ date: '2018-12-23T13:45:49.895Z'
 layout: post
 path: '/git-tutorial/'
 image: ./git-github.png
-category: Git
+category: Tutorial
 tags:
   - Github
+  - Git
 ---
 
 ###git이란?
