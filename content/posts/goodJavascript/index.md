@@ -93,3 +93,34 @@ Awesome()
 이상으로 console이였습니다!
 
 ---
+
+## Template Literal
+
+넵 이번에 볼 것은 안 써본 사람은 있어도 한번만 써본 사람은 없다는 템플릿 리터럴입니다. 한번 바로 보실까요?
+
+```javascript
+const a = { name: 'Junghun', age: 25 }
+console.log(`Hi! my name is ${a.name}, and i am ${a.age} years old!`)
+```
+
+네! 템플릿 스트링은 아시는 분들은 많이들 쓰고 있는 문법입니다. 사실 문자열들을 +로 연결하는 것은 가독성과 프로그래머의 에러를 유발하기 쉽습니다. 그래서 이렇게 하면 더욱 좋은 코드가 되는 것이죠! (참고로 object destructuring을 할 수는 있지만 일부러 하지 않았습니다.)
+
+사실 이 코드는 많이들 아시고 사용하시는 코드입니다. 그럼 이건 어떠신가요?
+
+```javascript
+function HelloMachine(str, name, age) {
+  const ageStr = age >= 25 ? '가망이 없어.' : '아직 괜찮아.'
+
+  return `${str[0]}, 난 ${name}이야 ${ageStr}`
+}
+
+console.log(HelloMachine`안뇽안뇽 ${'정훈'} ${25}`)
+```
+
+<img style="height: 310px;" src="./template2.png" alt="template2">
+
+넵 보시다시피 함수명 뒤에 ``를 붙이고 \${}한 것이 변수로서 들어가게 됩니다! 이렇게 스타일드 컴포넌트가 만들어져있지 않을까! 생각합니다.
+
+---
+
+이상으로 사람들이 많이 모르는! 자바스크립트의 문법을 알아보았습니다! 읽어주셔서 감사합니다!
