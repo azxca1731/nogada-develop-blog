@@ -24,7 +24,7 @@ class Profile extends React.Component {
           <section className="text-center">
             <div className="container">
               <Img fixed={profile} className="rounded-circle" />
-              <h1>jaxx2104</h1>
+              <h1>azxca1731</h1>
               <p className="lead text-muted">Front-end engineer.</p>
               <div>
                 <a href="https://github.com/azxca1731" data-show-count="false">
@@ -66,15 +66,11 @@ class Profile extends React.Component {
             <div className="container">
               <div className="row cover-over">
                 <div className="col-md-12 text-left">
-                  <h2 className="section-heading">Features</h2>
-                  <p>
-                    I will be a front-end engineer in Korea
-                    <br />
-                    Used to be a designer of furniture and architecture.
-                    <br />
-                  </p>
+                  <h2 className="section-heading">Records</h2>
                   <li>2014 ~ : Myongji University Dept.Computer Engineering</li>
-                  <li>2018.09 ~ 2018.12 : Codigm Intern</li>
+                  <li>2018.09 ~ 2018.12 : Codigm Intern (Goorm EDU,TEST)</li>
+                  <li>2019.01 ~ : MJU Likelion Organizer</li>
+                  <li>2019.07 ~ 2019.08 : Naver Intern (Naver Shopping)</li>
                 </div>
               </div>
             </div>
@@ -85,12 +81,31 @@ class Profile extends React.Component {
               <div className="row align-items-center">
                 <div className="col-md-12 text-left">
                   <h2 className="section-heading">Repositories</h2>
-                  <p>나중에 모달넣구 더 꾸밀게요 ㅠㅠ</p>
+                  <li>
+                    <a href="https://github.com/azxca1731/react-calenpicker">
+                      React Calenpicker
+                    </a>{' '}
+                    : You can make picker Easily! with react-calenpicker!
+                  </li>
+                  <li>
+                    <a href="https://github.com/remody/remody-dashboard">
+                      Remody
+                    </a>{' '}
+                    : 논문 검색 및 논문 키워드 추출 서비스
+                  </li>
+                  <li>
+                    <a href="https://github.com/azxca1731/shopping-recommend">
+                      Shopping-recommend
+                    </a>
+                    : 검색 엔진을 이용한 채팅 어플리케이션 내 쇼핑 상품 검색,
+                    추천 기능 구현
+                  </li>
                 </div>
               </div>
             </div>
           </section>
-          <section id="features" className="jumboimage">
+
+          {/* <section id="features" className="jumboimage">
             <Img sizes={back2} className="cover-image" />
             <div className="container">
               <div className="row cover-over">
@@ -100,7 +115,7 @@ class Profile extends React.Component {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </Layout>
     )
