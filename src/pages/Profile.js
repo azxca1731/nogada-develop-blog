@@ -67,10 +67,14 @@ class Profile extends React.Component {
               <div className="row cover-over">
                 <div className="col-md-12 text-left">
                   <h2 className="section-heading">Records</h2>
-                  <li>2014 ~ : Myongji University Dept.Computer Engineering</li>
+                  <li>
+                    2014.03 ~ 2020.02: Myongji University Dept.Computer
+                    Engineering
+                  </li>
                   <li>2018.09 ~ 2018.12 : Codigm Intern (Goorm EDU,TEST)</li>
-                  <li>2019.01 ~ : MJU Likelion Organizer</li>
+                  <li>2019.01 ~ 2019.12: MJU Likelion Organizer</li>
                   <li>2019.07 ~ 2019.08 : Naver Intern (Naver Shopping)</li>
+                  <li>2020.03 ~ : Coupang (Backend Developer)</li>
                 </div>
               </div>
             </div>
@@ -104,18 +108,6 @@ class Profile extends React.Component {
               </div>
             </div>
           </section>
-
-          {/* <section id="features" className="jumboimage">
-            <Img sizes={back2} className="cover-image" />
-            <div className="container">
-              <div className="row cover-over">
-                <div className="col-md-12 text-left">
-                  <h2 className="section-heading">Degree Works</h2>
-                  <p>전 아직 졸업을 안했어요 ㅠㅠ</p>
-                </div>
-              </div>
-            </div>
-          </section> */}
         </div>
       </Layout>
     )
