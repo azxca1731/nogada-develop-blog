@@ -25,7 +25,7 @@ class Profile extends React.Component {
             <div className="container">
               <Img fixed={profile} className="rounded-circle" />
               <h1>azxca1731</h1>
-              <p className="lead text-muted">Front-end engineer.</p>
+              <p className="lead text-muted">backend engineer.</p>
               <div>
                 <a href="https://github.com/azxca1731" data-show-count="false">
                   Follow @azxca1731
@@ -45,16 +45,22 @@ class Profile extends React.Component {
             </div>
             <div className="container">
               <div className="row justify-content-md-center">
-                <div className="col-lg-3 col-6">
-                  <Icon title="JavaScript" name="js" />
+                <div className="col-lg-4 col-6">
+                  <Icon title="Aws" name="aws" />
                 </div>
-                <div className="col-lg-3 col-6">
+                <div className="col-lg-4 col-6">
+                  <Icon title="Aws" name="java" />
+                </div>
+                <div className="col-lg-4 col-6">
+                  <Icon title="Docker" name="docker" />
+                </div>
+                <div className="col-lg-4 col-6">
                   <Icon title="React.js" name="react" />
                 </div>
-                <div className="col-lg-3 col-6 ">
-                  <Icon title="android" name="android" />
+                <div className="col-lg-4 col-6">
+                  <Icon title="JavaScript" name="js" />
                 </div>
-                <div className="col-lg-3 col-6">
+                <div className="col-lg-4 col-6">
                   <Icon title="Node.js" name="node" />
                 </div>
               </div>

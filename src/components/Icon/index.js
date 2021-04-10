@@ -9,6 +9,8 @@ import {
   faGithub,
   faHtml5,
   faJs,
+  faJava,
+  faDocker,
   faNode,
   faPhp,
   faReact,
@@ -20,6 +22,8 @@ import './style.scss'
 library.add(
   faAndroid,
   faAws,
+  faJava,
+  faDocker,
   faFacebook,
   faGithub,
   faHtml5,

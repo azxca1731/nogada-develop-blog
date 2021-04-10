@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Nogada Develop blog',
-    description: '명지대학교에서 컴퓨터 공학을 전공하는 학생입니다.',
+    description: 'Mistake Driven Development',
     siteUrl: 'https://azxca1731.netlify.com',
     author: 'azxca1731',
-    twitter: 'jaxx2104',
+    twitter: '',
     adsense: '',
   },
   pathPrefix: '/',
