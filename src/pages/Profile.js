@@ -11,7 +11,7 @@ import Icon from 'components/Icon'
 class Profile extends React.Component {
   render() {
     const { location, data } = this.props
-    const profile = get(data, 'profile.childImageSharp.fixed')
+    const profile = get(data, 'profile.childImageSharp.sizes')
     const work1 = get(data, 'work1.childImageSharp.sizes')
     const work2 = get(data, 'work2.childImageSharp.sizes')
     const back1 = get(data, 'back1.childImageSharp.sizes')
@@ -23,7 +23,7 @@ class Profile extends React.Component {
         <div>
           <section className="text-center">
             <div className="container">
-              <Img fixed={profile} className="rounded-circle" />
+              <Img sizes={profile} />
               <h1>azxca1731</h1>
               <p className="lead text-muted">backend engineer.</p>
               <div>
@@ -126,8 +126,8 @@ export const query = graphql`
   query ProfilePageQuery {
     profile: file(name: { eq: "profile" }) {
       childImageSharp {
-        fixed(width: 200, height: 200) {
-          ...GatsbyImageSharpFixed_withWebp
+        sizes(quality: 100) {
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
