@@ -1,9 +1,13 @@
-@import 'scss/colors.scss';
+@import "scss/colors.scss";
 
 .footer {
+  background-color: #eee;
+
   hr {
-    border-color: $red;
     border-width: 3px;
-    max-width: 50px;
+  }
+
+  a {
+    color: var(--bs-primary);
   }
 }

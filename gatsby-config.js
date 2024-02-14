@@ -1,100 +1,78 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ */
+
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    title: 'Nogada Develop blog',
-    description: 'Mistake Driven Development',
-    siteUrl: 'https://azxca1731.netlify.com',
-    author: 'azxca1731',
-    twitter: '',
-    adsense: '',
+    title: `Nogada Develop Blog`,
+    // author: {
+    //   name: `이정훈`,
+    //   summary: `who lives and works in San Francisco building useful things.`,
+    // },
+    author: "azxca1731",
+    twitter: "",
+    adsense: "",
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://azxca1731.netlify.app/`,
   },
-  pathPrefix: '/',
   plugins: [
+    "gatsby-plugin-slug",
+    `gatsby-plugin-image`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/posts/`,
-        name: 'posts',
+        path: `${__dirname}/content/posts`,
+        name: `blog`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/images/`,
-        name: 'images',
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 750,
-              linkImagesToOriginal: false,
-              wrapperStyle: 'margin-bottom: 1.0725rem;',
+              maxWidth: 630,
             },
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe',
+            resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
+              wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          `gatsby-remark-prismjs`,
         ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#673ab7',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/img/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        name: `Nogada Develop Blog`,
+        short_name: `NDB`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/sap.png`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: '',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
-      },
-    },
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-react-next',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-twitter',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-netlify',
   ],
 }

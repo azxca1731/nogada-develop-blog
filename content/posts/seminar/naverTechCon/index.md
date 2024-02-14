@@ -1,8 +1,8 @@
 ---
 title: 네이버 테크 콘서트 - 프론트엔드편
-date: '2019-04-11T01:03:29.151Z'
+date: "2019-04-11T01:03:29.151Z"
 layout: post
-path: '/naverTechCon/'
+path: "/naverTechCon/"
 image: ./main.jpg
 category: Conference
 tags:
@@ -151,4 +151,5 @@ css를 고도화 하기 위해 전처리css가 쓰이기 시작했다.
 ### 총평
 
 <img style="height: 310px;" src="./floor.jpg" alt="Floor" />
+
 다른 강의들도 진짜 너무 좋았고 네이버 콘서트 홀자체도 너무 이뻤다. 다른 강의들도 다 적고 싶었지만 오히려 이건 듣고 공감하는 것이 더 좋은 생각이라 나머지 강의는 피처 적지 못했다. 이외에도 네이버 계열사에서 간단하게 취업 설명회도 해서 너무 좋았다. 진짜 채용이 안되더라도 핵데이에 갈 수 있다면 좋겠다고 더더욱 생각이 들었다.

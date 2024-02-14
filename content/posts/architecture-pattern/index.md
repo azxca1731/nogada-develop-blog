@@ -1,8 +1,8 @@
 ---
 title: 엔터프라이즈 애플리케이션 아키텍쳐 패턴 - 관계형 데이터 베이스 매핑
-date: '2021-05-05T14:20:00.000Z'
+date: "2021-05-05T14:20:00.000Z"
 layout: post
-path: '/architecture_pattern/1'
+path: "/architecture-pattern/"
 category: pattern
 tags:
   - Martin Fowler

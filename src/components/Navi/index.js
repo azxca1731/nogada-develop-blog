@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
 class Navi extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class Navi extends React.Component {
             <ul className="navbar-nav bd-navbar-nav flex-row">
               <li
                 className={
-                  location.pathname === '/' ? 'nav-item active' : 'nav-item'
+                  location.pathname === "/" ? "nav-item active" : "nav-item"
                 }
               >
                 <Link to="/" className="nav-link">
@@ -23,9 +23,9 @@ class Navi extends React.Component {
               </li>
               <li
                 className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
-                    : 'nav-item'
+                  location.pathname === "/profile/"
+                    ? "nav-item active"
+                    : "nav-item"
                 }
               >
                 <Link to="/Profile/" className="nav-link">
@@ -37,7 +37,7 @@ class Navi extends React.Component {
         </div>
         <div className="container">
           <div className="text-center NavBio">
-            노가다는 예술과 같다. 그러므로 코딩도 예술이다
+            내가 겪은 일, 알고 싶은 정보를 담습니다.
           </div>
           <style jsx>{`
             .NavBio {

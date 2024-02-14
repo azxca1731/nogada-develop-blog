@@ -1,5 +1,5 @@
-@import 'scss/colors.scss';
-@import 'scss/fonts.scss';
+@import "scss/colors.scss";
+@import "scss/fonts.scss";
 
 .article {
   padding-top: 40px;
@@ -12,6 +12,7 @@
     word-break: break-word;
 
     h1 {
+      color: var(--bs-primary);
       letter-spacing: -0.5px;
     }
 
@@ -48,6 +49,12 @@
         display: block;
         word-break: break-word;
       }
+    }
+  }
+
+  .readmore {
+    span {
+      width: 100%;
     }
   }
 }

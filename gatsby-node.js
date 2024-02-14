@@ -1,7 +1,7 @@
-const each = require('lodash/each')
-const Promise = require('bluebird')
-const path = require('path')
-const PostTemplate = path.resolve('./src/templates/index.js')
+const each = require("lodash/each")
+const Promise = require("bluebird")
+const path = require("path")
+const PostTemplate = path.resolve("./src/templates/index.js")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -37,7 +37,8 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create blog posts & pages.
         const items = data.allFile.edges
-        const posts = items.filter(({ node }) => /posts/.test(node.name))
+        const posts = items.filter(({ node }) => /blog/.test(node.name))
+
         each(posts, ({ node }) => {
           if (!node.remark) return
           const { path } = node.remark.frontmatter
@@ -66,9 +67,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        components: path.resolve(__dirname, 'src/components'),
-        templates: path.resolve(__dirname, 'src/templates'),
-        scss: path.resolve(__dirname, 'src/scss'),
+        components: path.resolve(__dirname, "src/components"),
+        templates: path.resolve(__dirname, "src/templates"),
+        scss: path.resolve(__dirname, "src/scss"),
       },
     },
   })

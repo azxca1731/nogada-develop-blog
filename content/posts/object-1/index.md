@@ -1,8 +1,8 @@
 ---
 title: 오브젝트 6장까지를 읽고
-date: '2021-01-30T20:20:49.891Z'
+date: "2021-01-30T20:20:49.891Z"
 layout: post
-path: '/object-1/'
+path: "/object-1/"
 category: object
 tags:
   - Object
@@ -45,6 +45,7 @@ Candidate를 하나 놓고 이 것의 책임과 협력점을 구한다.
 ### 4장
 
 4장은 간단하게 몇가지 키워드로서 정리하겠다.
+
 <img style="height: 310px;" src="./slack.png" alt="slack" />
 
 ---
