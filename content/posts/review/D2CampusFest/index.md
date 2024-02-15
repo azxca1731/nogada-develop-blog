@@ -1,10 +1,10 @@
 ---
 title: D2 Campus Fest 6기 후기
-date: '2019-02-27T12:19:41.820Z'
+date: "2019-02-27T12:19:41.820Z"
 layout: post
-path: '/D2CampusFest/'
+path: "/D2CampusFest/"
 image: ./first.jpg
-category: Competition
+category: Review
 tags:
   - Naver
   - finalist

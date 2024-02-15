@@ -3,7 +3,7 @@ title: 카프카 스터디 3장 리뷰
 date: '2020-08-14T20:20:49.891Z'
 layout: post
 path: '/kafka-1/'
-category: kafka
+category: BookReview
 tags:
   - Kafka
   - Study

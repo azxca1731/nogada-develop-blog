@@ -1,10 +1,10 @@
 ---
 title: 알아두면 좋은 자바스크립트!
-date: '2019-03-28T13:30:30.325Z'
+date: "2019-03-28T13:30:30.325Z"
 layout: post
-path: '/goodJavascript/'
+path: "/goodJavascript/"
 image: ./es.png
-category: Memo
+category: Tutorial
 tags:
   - Javascript
   - EcmaScript
@@ -29,7 +29,7 @@ tags:
 ##### console.log('%c ',css)
 
 ```javascript
-console.log('%c Hello', 'color: orange; font-size:20px')
+console.log("%c Hello", "color: orange; font-size:20px")
 ```
 
 이 코드를 치시면 이런 식으로 나옵니다.
@@ -43,9 +43,9 @@ console.log('%c Hello', 'color: orange; font-size:20px')
 ##### console.table()
 
 ```javascript
-const foo = { name: 'tom', age: 30, nervous: true }
-const bar = { name: 'dick', age: 32, nervous: true }
-const baz = { name: 'harry', age: 20, nervous: false }
+const foo = { name: "tom", age: 30, nervous: true }
+const bar = { name: "dick", age: 32, nervous: true }
+const baz = { name: "harry", age: 20, nervous: false }
 console.table([foo, bar, baz])
 ```
 
@@ -57,14 +57,14 @@ console.table([foo, bar, baz])
 ##### console.time() & console.timeEnd()
 
 ```javascript
-console.time('looper')
+console.time("looper")
 
 let i = 0
 while (i < 1000000000) {
   i++
 }
 
-console.timeEnd('looper')
+console.timeEnd("looper")
 ```
 
 <img style="height: 310px;" src="./looper.png" alt="looper">
@@ -77,7 +77,7 @@ console.timeEnd('looper')
 
 ```javascript
 const hello = () => {
-  console.trace('javascript')
+  console.trace("javascript")
 }
 
 const Awesome = () => {
@@ -99,7 +99,7 @@ Awesome()
 넵 이번에 볼 것은 안 써본 사람은 있어도 한번만 써본 사람은 없다는 템플릿 리터럴입니다. 한번 바로 보실까요?
 
 ```javascript
-const a = { name: 'Junghun', age: 25 }
+const a = { name: "Junghun", age: 25 }
 console.log(`Hi! my name is ${a.name}, and i am ${a.age} years old!`)
 ```
 
@@ -109,12 +109,12 @@ console.log(`Hi! my name is ${a.name}, and i am ${a.age} years old!`)
 
 ```javascript
 function HelloMachine(str, name, age) {
-  const ageStr = age >= 25 ? '가망이 없어.' : '아직 괜찮아.'
+  const ageStr = age >= 25 ? "가망이 없어." : "아직 괜찮아."
 
   return `${str[0]}, 난 ${name}이야 ${ageStr}`
 }
 
-console.log(HelloMachine`안뇽안뇽 ${'정훈'} ${25}`)
+console.log(HelloMachine`안뇽안뇽 ${"정훈"} ${25}`)
 ```
 
 <img style="height: 310px;" src="./template2.png" alt="template2">

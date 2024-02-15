@@ -66,6 +66,7 @@ export const pageQuery = graphql`
     }
     allPosts: allMarkdownRemark(
       filter: { frontmatter: { path: { ne: $path } } }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {

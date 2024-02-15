@@ -1,8 +1,8 @@
 ---
 title: Beginner to Junior
-date: '2018-11-17T22:40:32.169Z'
+date: "2018-11-17T22:40:32.169Z"
 layout: post
-path: '/beginnerToJunior/'
+path: "/beginnerToJunior/"
 category: Conference
 tags:
   - Vue

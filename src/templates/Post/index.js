@@ -23,10 +23,13 @@ const Post = ({ data, options, allPosts }) => {
       allPosts?.edges
         ?.filter(it => it?.node?.frontmatter?.category === category)
         .slice(0, 5) ?? []
-    const latestBased = allPosts.edges.slice(0, 5 - categoryBased.length)
+    const latestBased = allPosts.edges
+      .filter(
+        it => !categoryBased?.map(it => it?.node?.id).includes(it?.node?.id)
+      )
+      .slice(0, 5 - categoryBased.length)
 
-    console.log(categoryBased)
-    console.log(latestBased)
+    console.log(allPosts)
 
     recommendPost = [...categoryBased, ...latestBased]
   }

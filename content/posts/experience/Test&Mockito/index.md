@@ -1,9 +1,9 @@
 ---
 title: Testing과 Mockito
-date: '2020-07-16T21:00:00.000Z'
+date: "2020-07-16T21:00:00.000Z"
 layout: post
-path: '/Test&Mockito/'
-category: Study
+path: "/Test&Mockito/"
+category: Experience
 tags:
   - Java
   - Mockito

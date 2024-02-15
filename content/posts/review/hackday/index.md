@@ -1,9 +1,9 @@
 ---
 title: 네이버 핵데이 2019 섬머 후기
-date: '2019-05-17T13:20:49.891Z'
+date: "2019-05-17T13:20:49.891Z"
 layout: post
-path: '/hackday/'
-category: Competition
+path: "/hackday/"
+category: Review
 tags:
   - Hackathon
   - Naver

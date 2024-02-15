@@ -3,7 +3,7 @@ title: 엔터프라이즈 애플리케이션 아키텍쳐 패턴 - 관계형 데
 date: "2021-05-05T14:20:00.000Z"
 layout: post
 path: "/architecture-pattern/"
-category: pattern
+category: BookReview
 tags:
   - Martin Fowler
   - Architecturing

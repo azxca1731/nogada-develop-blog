@@ -3,7 +3,7 @@ title: 오브젝트 6장까지를 읽고
 date: "2021-01-30T20:20:49.891Z"
 layout: post
 path: "/object-1/"
-category: object
+category: BookReview
 tags:
   - Object
   - Study

@@ -3,7 +3,7 @@ title: 스프링 배치 좌충우돌 적응기
 date: "2021-04-10T10:20:49.891Z"
 layout: post
 path: "/spring/batch1/"
-category: spring
+category: Experience
 tags:
   - Spring
   - TIL
