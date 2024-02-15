@@ -10,10 +10,6 @@
 module.exports = {
   siteMetadata: {
     title: `Nogada Develop Blog`,
-    // author: {
-    //   name: `이정훈`,
-    //   summary: `who lives and works in San Francisco building useful things.`,
-    // },
     author: "azxca1731",
     twitter: "",
     adsense: "",

@@ -18,6 +18,7 @@ const Template = ({ data, location }) => {
         {get(data, "post.frontmatter.layout") !== "page" ? (
           <Post
             data={get(data, "post")}
+            allPosts={get(data, "allPosts")}
             options={{
               isIndex: false,
             }}
@@ -59,6 +60,22 @@ export const pageQuery = graphql`
             fixed(width: 500) {
               ...GatsbyImageSharpFixed_withWebp
             }
+          }
+        }
+      }
+    }
+    allPosts: allMarkdownRemark(
+      filter: { frontmatter: { path: { ne: $path } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            category
+            tags
+            title
+            path
+            date(formatString: "YYYY/MM/DD")
           }
         }
       }

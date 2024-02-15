@@ -1,12 +1,13 @@
 import { Link } from "gatsby"
 import get from "lodash/get"
 import React from "react"
-import map from "lodash/map"
 import Img from "gatsby-image"
 
 import "./style.scss"
+import RecommendPost from "components/RecommendPosts"
+import Badges from "components/Badges"
 
-const Post = ({ data, options }) => {
+const Post = ({ data, options, allPosts }) => {
   if (!data) {
     return
   }
@@ -16,6 +17,19 @@ const Post = ({ data, options }) => {
   const html = get(data, "html")
   const isMore = isIndex && !!html.match("<!--more-->")
   const fixed = get(image, "childImageSharp.fixed")
+  let recommendPost = []
+  if (allPosts) {
+    const categoryBased =
+      allPosts?.edges
+        ?.filter(it => it?.node?.frontmatter?.category === category)
+        .slice(0, 5) ?? []
+    const latestBased = allPosts.edges.slice(0, 5 - categoryBased.length)
+
+    console.log(categoryBased)
+    console.log(latestBased)
+
+    recommendPost = [...categoryBased, ...latestBased]
+  }
 
   return (
     <div className="article" key={path}>
@@ -25,8 +39,8 @@ const Post = ({ data, options }) => {
             <h1>{title}</h1>
             <time dateTime={date}>{date}</time>
           </Link>
-          {Badges({ items: [category], primary: true })}
-          {Badges({ items: tags })}
+          <Badges items={[category]} primary={true} />
+          <Badges items={tags} primary={true} />
         </div>
         <div className="content">
           <p>{description}</p>
@@ -45,6 +59,7 @@ const Post = ({ data, options }) => {
           }}
         />
         {isMore ? Button({ path, label: "MORE", primary: true }) : ""}
+        <RecommendPost posts={recommendPost} />
       </div>
     </div>
   )
@@ -74,15 +89,3 @@ const Button = ({ path, label, primary }) => (
     </span>
   </Link>
 )
-
-const Badges = ({ items, primary }) =>
-  map(items, (item, i) => {
-    return (
-      <span
-        className={`badge ${primary ? "badge-primary" : "badge-secondary"}`}
-        key={i}
-      >
-        {item}
-      </span>
-    )
-  })
