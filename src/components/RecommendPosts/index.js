@@ -5,7 +5,9 @@ import "./style.scss"
 import Badges from "components/Badges"
 
 const RecommendPost = ({ posts }) => {
-  console.log(posts)
+  if (!posts || posts.length === 0) {
+    return <></>
+  }
 
   return (
     <div>
