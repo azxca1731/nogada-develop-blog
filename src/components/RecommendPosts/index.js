@@ -33,7 +33,7 @@ const RecommendPost = ({ posts }) => {
             </Link>
             <time dateTime={date}>{date}</time>
             <Badges items={[category]} primary={true} />
-            <Badges items={tags} primary={true} />
+            <Badges items={tags} primary={false} />
           </div>
         )
       )}

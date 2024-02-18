@@ -43,7 +43,7 @@ const Post = ({ data, options, allPosts }) => {
             <time dateTime={date}>{date}</time>
           </Link>
           <Badges items={[category]} primary={true} />
-          <Badges items={tags} primary={true} />
+          <Badges items={tags} primary={false} />
         </div>
         <div className="content">
           <p>{description}</p>
