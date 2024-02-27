@@ -38,7 +38,7 @@ VOC는 어떤 VOC였나면, CS툴에서 유저의 개인정보를 수정했는�
 ## 스프링 데이터 레디스 2 캐쉬키 생성 전략
 
 ![spring-data-redis-2-configuration](image.png)
-보는 것 처럼 스프링 데이터 레디스에서는 각 키별로 RedisCacheConfiguration을 만들어 관리한다 여기서 주의 깊게 봐야할 것은 CacheKeyPrefix.simple이다.
+보는 것 처럼 스프링 데이터 레디스2에서는 각 키별로 RedisCacheConfiguration을 만들어 관리한다 여기서 주의 깊게 봐야할 것은 CacheKeyPrefix.simple이다.
 한번 들여다 보자.
 
 ![spring-data-redis-cache](image-1.png)
@@ -74,6 +74,14 @@ User A는 Spring Data Redis 2 기반에서 조회 되어 캐쉬가 되었다.
 > 조회된 계정 ID: 1 이름: <b>김개똥</b>
 
 캐쉬키가 다르기에 각각 다르게 저장이 되었고, 이는 결국 장애로 귀결되었다.
+
+## 해결책
+
+이를 해결하기 위해서 Spring5의 기본 캐쉬키 전략을 쓰는 것이 아닌 해당 도메인만의 캐쉬 키를 쓰기로 하였다.
+밑에는 간단하게 보여주기 위한 예시 코드이다. 아래처럼 직접 prefix를 바꿔주는 것이 좋다.
+![changed solution](image-4.png)
+
+- 추신: 직접 코드를 살펴본 결과 Spring-data-redis 3에서는 해당 부분에 변경이 없다. 안심하자.
 
 ## Best Solution
 
