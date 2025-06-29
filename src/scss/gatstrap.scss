@@ -6,18 +6,18 @@
 //
 // Color system
 //
-@import './colors.scss';
+@use './colors.scss' as colors;
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-  primary: $black,
-  secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800,
+  primary: colors.$black,
+  secondary: colors.$gray-600,
+  success: colors.$green,
+  info: colors.$cyan,
+  warning: colors.$yellow,
+  danger: colors.$red,
+  light: colors.$gray-100,
+  dark: colors.$gray-800,
 ) !default;
 
 // Options
@@ -46,10 +46,10 @@ $container-max-widths: (
 //
 // Settings for the `<body>` element.
 
-$body-bg: $white !default;
-$body-color: $gray-700 !default;
-$inverse-bg: $gray-900 !default;
-$inverse-color: $gray-600 !default;
+$body-bg: colors.$white !default;
+$body-color: colors.$gray-700 !default;
+$inverse-bg: colors.$gray-900 !default;
+$inverse-color: colors.$gray-600 !default;
 
 // Links
 //
@@ -59,7 +59,7 @@ $link-hover-decoration: none !default;
 
 // Fonts
 //
-@import './fonts.scss';
+@use './fonts.scss' as fornts;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 

@@ -26,12 +26,12 @@
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
-    "node-sass": "^9.0.0",
     "prismjs": "^1.29.0",
     "punycode": "^2.3.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.89.2"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

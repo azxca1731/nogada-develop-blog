@@ -1,5 +1,5 @@
-@import "scss/colors.scss";
-@import "scss/fonts.scss";
+@use "scss/colors.scss" as colors;
+@use "scss/fonts.scss" as fonts;
 
 section {
   padding: 50px 0;
@@ -31,16 +31,16 @@ section {
   }
 
   hr {
-    border-color: $red;
+    border-color: colors.$red;
     border-width: 3px;
     max-width: 50px;
 
     &.light {
-      border-color: $white;
+      border-color: colors.$white;
     }
   }
 
   .section-heading {
-    font-family: $font-family-monospace;
+    font-family: fonts.$font-family-monospace;
   }
 }
