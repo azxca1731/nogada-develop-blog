@@ -59,7 +59,7 @@ $link-hover-decoration: none !default;
 
 // Fonts
 //
-@use './fonts.scss' as fornts;
+@import './fonts.scss';
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
